@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyGift</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/normalize.cssgit" />
+  </head>
+  <body class="body body--gift">
+    <header class="header">
+      <div class="container">
+        <img class="header__logo" src="img/logo.svg" alt="logo" width="180" height="48" />
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="gift">
+        <div class="container">
+          <h1 class="gift__title">Привітайте близьку людину зі святом!</h1>
+          <p class="gift__description">Виберіть листівку та одержувач отримає її на свій телефон</p>
+          <div class="gift__wrapper">
+            <div class="gift__card">
+              <div class="swiper">
+                <div class="swiper-wrapper gift__swiper gift__swiper--card">
+                  <div class="swiper-slide gift__card-slide">
+                    <img class="gift__card-image" src="img/card_01.jpg" alt="Листівка №1" />
+                  </div>
+                  <div class="swiper-slide gift__card-slide">
+                    <img class="gift__card-image" src="img/card_02.jpg" alt="Листівка №2" />
+                  </div>
+                  <div class="swiper-slide gift__card-slide">
+                    <img class="gift__card-image" src="img/card_03.jpg" alt="Листівка №3" />
+                  </div>
+                  <div class="swiper-slide gift__card-slide">
+                    <img class="gift__card-image" src="img/card_04.jpg" alt="Листівка №4" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper">
+                <div class="swiper-wrapper gift__swiper gift__swiper--thumb">
+                  <div class="swiper-slide gift__card-thumb">
+                    <img class="gift__card-image" src="img/card_01.jpg" alt="Листівка №1" />
+                  </div>
+                  <div class="swiper-slide gift__card-thumb">
+                    <img class="gift__card-image" src="img/card_02.jpg" alt="Листівка №2" />
+                  </div>
+                  <div class="swiper-slide gift__card-thumb">
+                    <img class="gift__card-image" src="img/card_03.jpg" alt="Листівка №3" />
+                  </div>
+                  <div class="swiper-slide gift__card-thumb">
+                    <img class="gift__card-image" src="img/card_04.jpg" alt="Листівка №4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="gift__form form">
+              <label class="form__label">
+                <span class="form__label-text">від кого</span>
+                <input class="form__field" type="text" name="sender_name" />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">телефон відправника</span>
+                <input class="form__field" type="text" name="sender_phone" />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">кому</span>
+                <input class="form__field" type="text" name="receiever_name" />
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">телефон одержувача</span>
+                <input class="form__field" type="text" name="receiever_phone" />
+              </label>
+              <label class="form__label form__label--textarea">
+                <span class="form__label-text">текст привітання</span>
+                <textarea
+                  class="form__field form__field--textarea"
+                  name="message"
+                  placeholder="напишіть теплі слова"
+                ></textarea>
+              </label>
+              <button class="form__button" type="submit" disabled>Відправити</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
