@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyGift</title>
+    <!-- <script src="js/script.js" defer></script> -->
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -15,17 +16,32 @@
       </div>
     </header>
     <main class="main-content">
-      <section class="congratulation">
+      <section class="congratulations">
         <div class="container">
-          <h1 class="congratulation__title">Вам листівка!</h1>
-          <p class="congratulation__description">
+          <h1 class="congratulations__title">Вам листівка!</h1>
+          <p class="congratulations__description">
             Натисніть на неї, щоб дізнатися від кого вона та прочитати привітання
           </p>
-          <div class="card">
-            <div class="card-front">
-              <img class="card-image" src="img/card_01.jpg" alt="congratulation-card" />
+          <div class="congratulations__card card">
+            <div class="card__inner">
+              <div class="card-front">
+                <img class="card-image" src="img/card_01.jpg" alt="congratulation-card" />
+              </div>
+              <div class="card-back">
+                <h2 class="card__title">Привітання</h2>
+                <div class="card__contacs">
+                  <p class="card__detail">
+                    <span class="card__subtitle">від кого</span>
+                    <span class="card__from">Ольга Лама</span>
+                  </p>
+                  <p class="card__detail">
+                    <span class="card__subtitle">кому</span>
+                    <span class="card__from">Максим Логін</span>
+                  </p>
+                </div>
+                <p class="card__message">Бажаю Щасливого Нового року та Різдва! Будьте здорові та радісні!</p>
+              </div>
             </div>
-            <div class="card-back"></div>
           </div>
         </div>
       </section>

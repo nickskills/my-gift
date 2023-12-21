@@ -1,3 +1,18 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v26-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-v26-cyrillic_latin-700.woff2') format('woff2');
+}
+
 html {
   box-sizing: border-box;
 }
@@ -5,4 +20,169 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+.body {
+  font-family: 'Nunito', sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #221f1f;
+}
+.body--gift {
+  background: #b4eae9 url('../img/bg-gift.jpg') center/cover;
+}
+.body--congratulation {
+  background: #faa1b6 url('../img/bg-congratulation.jpg') center/cover;
+}
+.container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.header {
+  padding: 40px 0;
+}
+.header__logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.gift {
+  padding: 20px 0 80px;
+}
+.gift__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+.gift__description {
+  font-size: 20px;
+  margin: 0 0 50px;
+}
+.gift__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+}
+.gift__card {
+  max-width: 580px;
+}
+.gift__swiper {
+}
+.gift__swiper--card {
+  margin-bottom: 20px;
+}
+.gift__card-slide {
+  border-radius: 20px;
+  border: 2px solid #4baa00;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.gift__card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.gift__card-thumb {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gift__form {
+  max-width: 480px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  justify-items: start;
+}
+.form__label {
+  width: 100%;
+}
+.form__label-text {
+  display: block;
+  margin-bottom: 4px;
+}
+.form__field {
+  width: 100%;
+  font: inherit;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+  background-color: #fbfbfb;
+  outline: none;
+  padding: 8px 16px;
+}
+.form__field:hover,
+.form__field:focus-visible,
+.form__field:active {
+  border-color: #999;
+}
+.form__label--textarea {
+  grid-column: 1 / -1;
+}
+.form__field--textarea {
+  min-height: 150px;
+  resize: none;
+}
+.form__button {
+  border-radius: 32px;
+  background-color: #4baa00;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 24px;
+}
+.form__button:hover:not(:disabled) {
+  background-color: #58c601;
+}
+.form__button:active:not(:disabled) {
+  transform: translate(2px, 2px);
+}
+.form__button:focus-visible {
+  border: 1px solid #58c601;
+}
+.form__button:disabled {
+  opacity: 0.4;
+}
+
+.congratulations {
+}
+.container {
+}
+.congratulations__title {
+}
+.congratulations__description {
+}
+.congratulations__card {
+}
+.card {
+}
+.card__inner {
+}
+.card-front {
+}
+.card-image {
+}
+.card-back {
+}
+.card__title {
+}
+.card__contacs {
+}
+.card__detail {
+}
+.card__subtitle {
+}
+.card__from {
+}
+.card__message {
 }

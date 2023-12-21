@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyGift</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js" defer></script>
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="css/normalize.cssgit" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="body body--gift">
     <header class="header">
@@ -19,11 +23,11 @@
       <section class="gift">
         <div class="container">
           <h1 class="gift__title">Привітайте близьку людину зі святом!</h1>
-          <p class="gift__description">Виберіть листівку та одержувач отримає її на свій телефонgit</p>
+          <p class="gift__description">Виберіть листівку та одержувач отримає її на свій телефон</p>
           <div class="gift__wrapper">
             <div class="gift__card">
-              <div class="swiper">
-                <div class="swiper-wrapper gift__swiper gift__swiper--card">
+              <div class="swiper gift__swiper gift__swiper--card">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide gift__card-slide">
                     <img class="gift__card-image" src="img/card_01.jpg" alt="Листівка №1" />
                   </div>
@@ -39,8 +43,8 @@
                 </div>
               </div>
 
-              <div class="swiper">
-                <div class="swiper-wrapper gift__swiper gift__swiper--thumb">
+              <div class="swiper gift__swiper gift__swiper--thumb">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide gift__card-thumb">
                     <img class="gift__card-image" src="img/card_01.jpg" alt="Листівка №1" />
                   </div>
