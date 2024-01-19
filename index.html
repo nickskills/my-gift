@@ -6,8 +6,9 @@
     <title>MyGift</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js" defer></script>
     <script src="js/script.js" defer></script>
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -22,23 +23,43 @@
     <main class="main-content">
       <section class="gift">
         <div class="container">
-          <h1 class="gift__title">Привітайте близьку людину зі святом!</h1>
+          <h1 class="gift__title">Привітайте близьку людину зі&nbsp;святом!</h1>
           <p class="gift__description">Виберіть листівку та одержувач отримає її на свій телефон</p>
           <div class="gift__wrapper">
             <div class="gift__card">
               <div class="swiper gift__swiper gift__swiper--card">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide gift__card-slide">
-                    <img class="gift__card-image" src="img/card_01.jpg" alt="Листівка №1" />
+                    <img
+                      class="gift__card-image"
+                      src="img/card_01.jpg"
+                      alt="Листівка №1"
+                      data-card="Листівка №1"
+                    />
                   </div>
                   <div class="swiper-slide gift__card-slide">
-                    <img class="gift__card-image" src="img/card_02.jpg" alt="Листівка №2" />
+                    <img
+                      class="gift__card-image"
+                      src="img/card_02.jpg"
+                      alt="Листівка №2"
+                      data-card="Листівка №2"
+                    />
                   </div>
                   <div class="swiper-slide gift__card-slide">
-                    <img class="gift__card-image" src="img/card_03.jpg" alt="Листівка №3" />
+                    <img
+                      class="gift__card-image"
+                      src="img/card_03.jpg"
+                      alt="Листівка №3"
+                      data-card="Листівка №3"
+                    />
                   </div>
                   <div class="swiper-slide gift__card-slide">
-                    <img class="gift__card-image" src="img/card_04.jpg" alt="Листівка №4" />
+                    <img
+                      class="gift__card-image"
+                      src="img/card_04.jpg"
+                      alt="Листівка №4"
+                      data-card="Листівка №4"
+                    />
                   </div>
                 </div>
               </div>
@@ -67,15 +88,15 @@
               </label>
               <label class="form__label">
                 <span class="form__label-text">телефон відправника</span>
-                <input class="form__field" type="text" name="sender_phone" />
+                <input class="form__field form__field--phone" type="text" name="sender_phone" />
               </label>
               <label class="form__label">
                 <span class="form__label-text">кому</span>
-                <input class="form__field" type="text" name="receiever_name" />
+                <input class="form__field" type="text" name="receiver_name" />
               </label>
               <label class="form__label">
                 <span class="form__label-text">телефон одержувача</span>
-                <input class="form__field" type="text" name="receiever_phone" />
+                <input class="form__field form__field--phone" type="text" name="receiever_phone" />
               </label>
               <label class="form__label form__label--textarea">
                 <span class="form__label-text">текст привітання</span>
@@ -85,6 +106,7 @@
                   placeholder="напишіть теплі слова"
                 ></textarea>
               </label>
+              <input class="form__card" type="hidden" name="card" />
               <button class="form__button" type="submit" disabled>Відправити</button>
             </form>
           </div>
